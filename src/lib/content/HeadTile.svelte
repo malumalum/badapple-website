@@ -28,9 +28,9 @@
   {/if} 
   <br><strong>{title[item]}</strong>
   <div class="socials">
-  {#each social as { network, item }}
+  {#each social as soc}
   <div class="icon">
-    <a href={item} target="_blank"><SocialIcons {network} width={width} height={height} /></a>
+    <a href={soc[item]} target="_blank"><SocialIcons network={soc.network} width={width} height={height} /></a>
   </div>
   {/each} 
   </div>
