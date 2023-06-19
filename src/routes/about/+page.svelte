@@ -10,14 +10,16 @@
   import veljkoHeadshot from '/src/lib/images/headshot_vp.png'
   import urosHeadshot from '/src/lib/images/headshot_uk.png'
   import zhaoHeadshot from '/src/lib/images/headshot_zl.png'
+  import danialHeadshot from '/src/lib/images/headshot_dh.png'
+
 
   let socialIconWidth = 28;
   let socialIconHeight = 28;
 
-  const title = { ja: "Jalil Afnan, MD, MRCS", vp: "Veljko Popov, MD, PhD", uk: "Uroš Kalabić, PhD", zl: "Zhaojian Li, PhD"};
+  const title = { ja: "Jalil Afnan, MD, MRCS", vp: "Veljko Popov, MD, PhD", uk: "Uroš Kalabić, PhD", zl: "Zhaojian Li, PhD", dh: "Danial Hasan"};
 
   const social = [
-      { network: "linkedin", ja: "https://www.linkedin.com/in/jalilafnan/", vp: "https://www.linkedin.com/in/veljko-popov-b9220916/", uk: "https://www.linkedin.com/in/ukalabic/", zl: "https://www.linkedin.com/in/zhaojian-li-5278a662/"},
+      { network: "linkedin", ja: "https://www.linkedin.com/in/jalilafnan/", vp: "https://www.linkedin.com/in/veljko-popov-b9220916/", uk: "https://www.linkedin.com/in/ukalabic/", zl: "https://www.linkedin.com/in/zhaojian-li-5278a662/", dh: "https://www.linkedin.com/in/danialshasan/"},
       { network: "mailto", ja: "mailto:jalil.afnan@badapple.ai", vp: "mailto:veljko.popov@badapple.ai"},
     ];
 
@@ -30,7 +32,7 @@
   <div class="justify">
     <Mission />
   </div>
-  
+
   <h2>Our co-founders:</h2>
 
   <div class="people">
@@ -39,7 +41,7 @@
   </div>
   <div class="people">
     <HeadTile headshot={urosHeadshot} item={"uk"} width={socialIconWidth} height={socialIconHeight} social={social} title={title} />
-    <HeadTile headshot={zhaoHeadshot} item={"zl"} width={socialIconWidth} height={socialIconHeight} social={social} title={title} />
+    <HeadTile headshot={danialHeadshot} item={"dh"} width={socialIconWidth} height={socialIconHeight} social={social} title={title} />
   </div>
 
   <h6>&copy; 2023 Bad Apple Inc.</h6>
